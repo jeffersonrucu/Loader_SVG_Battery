@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-battery-charging" viewBox="0 0 16 16">
+                    
+                    <style>
+                        svg {
+                            fill: #6d6d6d;
+                        }
+
+                        #loading {
+                            fill: #facf22;
+                            animation: load 2s infinite ;
+                        }
+
+                        @keyframes load {
+                            0% {
+                                d: path("M2 6h 1v 4H 2V 6z");
+                                fill: #ff0000;  
+                            }
+
+                            100% {
+                                d: path("M2 6h 10v 4H 2V 6z");   
+                            }
+                        }
+
+
+                    </style>
+                    
+                    <path id="loading"/>
+                    <path d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h10zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z"/>
+                </svg>
+            </div>
+        </main>
+    </body>
+</html>
